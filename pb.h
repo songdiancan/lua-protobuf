@@ -101,6 +101,9 @@ typedef enum pb_FieldType {
 } pb_FieldType;
 
 
+/* 编译slua，pb库修改 */
+LUALIB_API int luaopen_pb(lua_State *L)
+
 /* conversions */
 
 PB_API uint64_t pb_expandsig     (uint32_t v);
